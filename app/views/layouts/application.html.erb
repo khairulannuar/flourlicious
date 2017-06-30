@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <div class="navbar navbar-default">
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
       <!-- navbar brand -->
         <div class="navbar-header">
@@ -26,9 +26,17 @@
              <li><a href="/" class="navbar-brand" id="brand">Flourlicious</a></li>
            </ul>
          </div>
-
+         <ul class="nav navbar-nav navbar-right">
+            <% if current_user %>
+              <li><a><%= current_user.username %></a></li>
+              <li><%= link_to "Log Out",logout_path %></li>
+            <% else %>
+              <li><%= link_to "Sign Up",signup_path %></li>
+              <li><%= link_to "Log In",login_path %></li>
+            <% end %>
+          </ul>
       </div>
-    </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
