@@ -1,13 +1,23 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbotron {
+  height: 400px;
+  background-image: url(/assets/bake.jpg);
+  background-size: cover;
+  background-position: 0% 60%;
+
+}
 
 #main-heading {
   text-align: center;
+  color: white;
+  font-family: rockwell;
 }
 
 #find-recipe {
   text-align: center;
+  color: white;
 }
 
 #latest-recipes {
