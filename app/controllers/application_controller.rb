@@ -6,5 +6,4 @@ class ApplicationController < ActionController::Base
   def current_user
     User.where(id: session[:user_id]).first
   end
-  helper method :current_user
 end
