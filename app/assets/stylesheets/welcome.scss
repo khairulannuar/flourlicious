@@ -9,17 +9,24 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css?family=Allura');
+
 #main-heading {
   text-align: center;
   color: white;
-  font-family: rockwell;
+  font-family: Allura;
+  font-size: 100px;
 }
-
-#find-recipe {
+@import url('https://fonts.googleapis.com/css?family=Alegreya Sans');
+#web-description {
+  font-family: Alegreya Sans;
+  font-size: 25px;
   text-align: center;
   color: white;
 }
 
 #latest-recipes {
   text-align: center;
+  font-family: Alegreya Sans;
+  font-size: 30px;
 }
