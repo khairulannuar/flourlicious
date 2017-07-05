@@ -14,7 +14,41 @@
  *= require_self
  */
 
+@import url('https://fonts.googleapis.com/css?family=Allura');
+
 #brand {
-  font-family: rockwell;
+  font-family: Allura;
   color: grey;
+  font-size: 25px;
+}
+
+#modal-signup {
+  text-align: center;
+  font-family: Allura;
+  font-size: 45px;
+  color: grey;
+}
+
+#modal-login {
+  text-align: center;
+  font-family: Allura;
+  font-size: 45px;
+  color: grey;
+}
+
+
+#mySignup, #myLogin {
+    background-color: #fefefe;
+    opacity: 0.95;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 12px;
+    width: 30%;
+    height: 45%;
+    /* Could be more or less, depending on screen size */
+}
+
+#not-register-yet {
+  text-align: center;
 }
