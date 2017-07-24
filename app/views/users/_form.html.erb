@@ -10,28 +10,40 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :username %>
-    <%= f.text_field :username %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <%= f.label :username %>
+        <%= f.text_field :username, type: 'username', class: "form-control" %>
+        <br>
+        <%= f.label :email %>
+        <%= f.text_field :email, type: 'email', class: "form-control"%>
+        <br>
+        <%= f.label :name %>
+        <%= f.text_field :name, type: 'name', class: "form-control" %>
+        <br>
+        <%= f.label :cooking_expertise %>
+        <%= f.text_field :cooking_expertise, type: 'cooking_expertise', class: "form-control" %>
+        <br>
+        <%= f.label :gender %>
+        <%= f.text_field :gender, type: 'gender', class: "form-control" %>
+        <br>
+        <%= f.label :location %>
+        <%= f.text_field :location, type: 'location', class: "form-control" %>
+        <br>
+        <%= f.label :about_me %>
+        <%= f.text_field :about_me, type: 'about_me', class: "form-control" %>
+        <br>
+        <%= f.label :password %>
+        <%= f.password_field :password, type: 'password', class: "form-control" %>
+        <br>
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, type: 'password_confirmation', class: "form-control" %>
+        <br>
+        <%= button_tag "Edit Profile", type: "submit", class: "btn btn-basic btn-block"%>
+        <% end %>
+        <br>
+        <div style="text-align:center;"><%= link_to 'Back', user_path %></div>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
