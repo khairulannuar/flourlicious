@@ -1,4 +1,15 @@
-<p id="notice"><%= notice %></p>
+
+<div class="container-fluid" id="profile-page">
+  <div class="jumbotron" id="profile-jumbo">
+      <h1 id="user-name">
+      <%= @user.name %>
+      </h1>
+  </div>
+</div>
+
+<div class="container-fluid" id="about-me-container">
+
+  <h2 id="about-me">About Me</h2>
 
 <p>
   <strong>Username:</strong>
@@ -10,5 +21,30 @@
   <%= @user.email %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<p>
+  <strong>Gender:</strong>
+  <%= @user.gender %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @user.location %>
+</p>
+
+<p>
+  <strong>Cooking Expertise:</strong>
+  <%= @user.cooking_expertise %>
+</p>
+
+<p>
+  <strong>More about me:</strong>
+  <%= @user.about_me %>
+</p>
+
+<%= link_to 'Edit Profile', edit_user_path(@user) %>
+
+</div>
+
+<div class="container-fluid" id="profile-recipes-container">
+  <h3 id="profile-recipes"> My Recipes </h3>
+</div>

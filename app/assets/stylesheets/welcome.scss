@@ -1,7 +1,7 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.jumbotron {
+#homepage-jumbo {
   height: 400px;
   background-image: url(/assets/bake.jpg);
   background-size: cover;
@@ -17,16 +17,13 @@
   font-family: Allura;
   font-size: 100px;
 }
-@import url('https://fonts.googleapis.com/css?family=Alegreya Sans');
 #web-description {
-  font-family: Alegreya Sans;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   color: white;
 }
 
 #latest-recipes {
   text-align: center;
-  font-family: Alegreya Sans;
   font-size: 30px;
 }
